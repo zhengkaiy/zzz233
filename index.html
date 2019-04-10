@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.d1{
+				width: 500px;
+				height: 500px;
+				background: yellow url(img/peiqi.png) no-repeat;
+				position: relative;
+				/*left: 600px;*/
+				/*background-color: yellow;
+				background-image: url(img/peiqi.png);
+				background-repeat: no-repeat;*/
+				
+				animation: donghua1 3s forwards;
+				/*设置动画关键帧的名称*/
+				animation-name: donghua1;
+				/*设置动画周期*/
+				animation-duration: 3s;
+				/*设置动画的填充模式，forwards是将最后一帧的样式保留*/
+				animation-fill-mode: forwards;
+				/*设置动画的延迟时间*/
+				animation-delay: 2s;
+				/*设置动画速度的快慢*/
+				animation-timing-function: linear;
+				/*设置动画次数*/
+				animation-iteration-count: infinite;
+				/*
+				 运动方向：
+				 normal:默认
+				 reverse：从终点往起点运动
+				 alternate:奇数次是正常运动，偶数次是从终点往起点运动
+				 alternate-reverse:奇数次是从终点往起点运动，偶数次是正常运动
+				 
+				 */
+				animation-direction: alternate;
+				
+				
+			}
+			
+			
+			@keyframes donghua1{
+				0%{
+					left: 0px;
+					background-color: yellow;
+				}
+				50%{
+					left: 60px;
+					background-color: purple;
+				}
+				80%{
+					background-color: peru;
+				}
+				100%{
+					left: 600px;
+					background-color: green;
+				}
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="d1">
+			
+			
+			
+		</div>
+	</body>
+</html>
